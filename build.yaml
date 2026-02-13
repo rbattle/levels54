@@ -1,8 +1,8 @@
 ---
 include:
   - board: levels54_left
-    snippet: zmk-usb-logging
+    #snippet: zmk-usb-logging
   - board: levels54_right
     snippet: studio-rpc-usb-uart
-    snippet: zmk-usb-logging
-    cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_PMW3610_LOG_LEVEL_DBG=y
+    #snippet: zmk-usb-logging
+    cmake-args: -DCONFIG_ZMK_STUDIO=y
