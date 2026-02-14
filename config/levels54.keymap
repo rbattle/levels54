@@ -12,7 +12,18 @@
 &trackball_peripheral_listener {
     input-processors = <&zip_zxy &zip_xy_to_scroll_mapper>;
 };
+
+&zephyr_udc0 {
+    cdc_acm_uart: cdc_acm_uart {
+        compatible = "zephyr,cdc-acm-uart";
+    };
+};
+
 / {
+    chosen {
+        zephyr,console = &cdc_acm_uart;
+        zephyr,shell-uart = &cdc_acm_uart;
+    };
 
     keymap {
         compatible = "zmk,keymap";
