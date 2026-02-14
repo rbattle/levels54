@@ -6,7 +6,7 @@
 #include <input/processors.dtsi>
 
 &trackball_peripheral_split {
-    input-processors = <&zip_xyz>, <&zip_ble_report_rate_limit>;
+    input-processors = <&zip_xyz &zip_ble_report_rate_limit>;
 };
 
 &trackball_peripheral_listener {
