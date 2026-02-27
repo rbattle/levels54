@@ -1,0 +1,27 @@
+/ {
+    behaviors {
+        /* Hold Left GUI while keys are pressed in mouse_layer */
+        gui_layer_mod: gui_layer_mod {
+            compatible = "zmk,behavior-mod-macro";
+            #binding-cells = <1>;
+            mods = <MOD_LGUI>;
+        };
+
+        /* Momentary layer key for mouse_layer */
+        mouse_layer_key: mouse_layer_key {
+            compatible = "zmk,behavior-momentary-layer";
+            #binding-cells = <0>;
+            layer = <mouse_layer>;
+        };
+    };
+};
+
+/* Trackball / PMW3610 configuration with scroll scaling */
+&trackball_peripheral_split {
+    device = <&trackball_peripheral>;
+    input-processors = <
+        &zip_xy_to_scroll_mapper 6 6   /* slows scroll for PMW3610 */
+        , &zip_xyz
+        , &zip_ble_report_rate_limit
+    >;
+};

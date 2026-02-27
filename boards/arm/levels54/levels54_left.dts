@@ -1,7 +1,0 @@
- &trackball_peripheral_split {
-    device = <&trackball_peripheral>;
-    input-processors
-      = <&zip_xy_to_scroll_mapper 6 6>
-      , <&zip_xyz>
-      , <&zip_ble_report_rate_limit>;
-};
