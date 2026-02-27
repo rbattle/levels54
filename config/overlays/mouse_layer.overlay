@@ -11,7 +11,7 @@
         mouse_layer_key: mouse_layer_key {
             compatible = "zmk,behavior-momentary-layer";
             #binding-cells = <0>;
-            layer = <mouse_layer>;
+            layer = <3>;
         };
     };
 };
