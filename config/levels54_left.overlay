@@ -1,3 +1,5 @@
+#include <dt-bindings/zmk/modifiers.h>
+
 / {
     behaviors {
         /* Hold Left GUI while keys are pressed in mouse_layer */
@@ -20,8 +22,8 @@
 &trackball_peripheral_split {
     device = <&trackball_peripheral>;
     input-processors = <
-        &zip_xy_to_scroll_mapper 6 6   /* slows scroll for PMW3610 */
-        , &zip_xyz
-        , &zip_ble_report_rate_limit
+        &zip_xy_to_scroll_mapper(6 6)   /* slows scroll for PMW3610 */
+        &zip_xyz
+        &zip_ble_report_rate_limit
     >;
 };
