@@ -45,8 +45,8 @@
             bindings = <
 &trans       &trans     &trans     &trans     &trans     &trans            &trans  &trans  &trans  &trans  &trans  &trans
 &gui_layer_mod TAB      &gui_layer_mod Q   &gui_layer_mod W  &trans     &trans     &gui_layer_mod T         &trans  &trans  &trans  &trans  &trans  &trans
-&trans       &gui_layer_mod A  &gui_layer_mod S  &mkp MB2   &mkp LCLK  &msc <0 1>      &trans  &trans  &trans  &trans  &trans  &trans
-&trans       &gui_layer_mod Z  &gui_layer_mod X  &gui_layer_mod C  &gui_layer_mod V  &msc <0 -1>     &trans  &trans  &trans  &trans  &trans  &trans
+&trans       &gui_layer_mod A  &gui_layer_mod S  &mkp MB2   &mkp LCLK   &msc (MOVE_Y(5))     &trans  &trans  &trans  &trans  &trans  &trans
+&trans       &gui_layer_mod Z  &gui_layer_mod X  &gui_layer_mod C  &gui_layer_mod V  &msc (MOVE_Y(-5))&trans  &trans  &trans  &trans  &trans  &trans
                                    &trans     &trans     &trans            &trans  &trans  &trans
             >;
         };
