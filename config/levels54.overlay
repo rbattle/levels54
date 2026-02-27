@@ -1,19 +1,10 @@
-#include <dt-bindings/zmk/modifiers.h>
+&trackball_peripheral_listener {
+  status = "okay";
 
-/ {
-    behaviors {
-        /* Hold Left GUI while keys are pressed in mouse_layer */
-        gui_layer_mod: gui_layer_mod {
-            compatible = "zmk,behavior-mod-macro";
-            #binding-cells = <0>;   /* no numeric arguments needed */
-            mods = <MOD_LGUI>;
-        };
-
-        /* Momentary layer key for mouse_layer */
-        mouse_layer_key: mouse_layer_key {
-            compatible = "zmk,behavior-momentary-layer";
-            #binding-cells = <1>;   /* requires layer number passed in keymap */
-        };
-    };
+  scrolling {
+    layers = <1 2 3>;
+    input-processors
+      = <&zip_xy_to_scroll_mapper>
+      , <&zip_scroll_scaler 1 4>;
+  };
 };
-
