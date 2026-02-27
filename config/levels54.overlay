@@ -2,14 +2,16 @@
 
 / {
     behaviors {
+        /* Hold Left GUI while keys are pressed in mouse_layer */
         gui_layer_mod: gui_layer_mod {
             compatible = "zmk,behavior-mod-macro";
-            mods = <MOD_LGUI>;   /* no #binding-cells */
+            mods = <MOD_LGUI>;
         };
 
+        /* Momentary layer key for mouse_layer */
         mouse_layer_key: mouse_layer_key {
             compatible = "zmk,behavior-momentary-layer";
-            /* no binding here; layer number passed in keymap */
+            #binding-cells = <1>;
         };
     };
 };
