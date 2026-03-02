@@ -10,22 +10,22 @@
         default_layer {
             display-name = "Base";
             bindings = <
-&gresc      &kp N1  &kp N2  &kp N3    &kp N4  &kp N5         &kp N6   &kp N7  &kp N8     &kp N9   &kp N0    &kp BACKSPACE
-&kp TAB     &kp Q   &kp W   &kp E     &kp R   &kp T          &kp Y    &kp U   &kp I      &kp O    &kp P     &kp GRAVE
-&kp LSHIFT  &kp A   &kp S   &kp D     &kp F   &kp G          &kp H    &kp J   &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LCTRL   &kp Z   &kp X   &kp C     &kp V   &kp B          &kp N    &kp M   &kp COMMA  &kp DOT  &kp FSLH  &kp RIGHT_SHIFT
-                            &kp LGUI  &mo 1   &lt 3 SPACE    &kp RET  &mo 2   &kp RALT
+&gresc      &kp N1  &kp N2  &kp N3    &kp N4  &kp N5            &kp N6   &kp N7  &kp N8     &kp N9   &kp N0    &kp BACKSPACE
+&kp TAB     &kp Q   &kp W   &kp E     &kp R   &kp T             &kp Y    &kp U   &kp I      &kp O    &kp P     &kp GRAVE
+&kp LSHIFT  &kp A   &kp S   &kp D     &kp F   &kp G             &kp H    &kp J   &kp K      &kp L    &kp SEMI  &kp SQT
+&kp LCTRL   &kp Z   &kp X   &kp C     &kp V   &kp B             &kp N    &kp M   &kp COMMA  &kp DOT  &kp FSLH  &kp RIGHT_SHIFT
+                            &kp LGUI  &mo 1   &mt LGUI SPACE    &kp RET  &mo 2   &kp RALT
             >;
         };
 
         lower_layer {
             display-name = "Lower";
             bindings = <
-&kp TILDE   &kp N1  &kp N2  &kp N3    &kp N4        &kp N5          &kp N6    &kp N7  &kp N8    &kp N9     &kp N0  &trans
-&kp TAB     &kp N1  &kp N2  &kp N3    &kp N4        &kp N5          &kp N6    &kp N7  &kp N8    &kp N9     &kp N0  &trans
-&bt BT_CLR  &trans  &trans  &trans    &mkp MB1      &mkp MB2        &kp LEFT  &kp UP  &kp DOWN  &kp RIGHT  &trans  &trans
-&kp LCTRL   &none   &none   &none     &bt BT_SEL 0  &bt BT_SEL 1    &trans    &trans  &trans    &trans     &trans  &trans
-                            &kp LGUI  &trans        &kp SPACE       &kp RET   &trans  &kp RALT
+&kp TILDE   &kp N1        &kp N2        &kp N3        &kp N4        &kp N5          &kp N6    &kp N7    &kp N8    &kp N9     &kp N0  &trans
+&kp TAB     &kp N1        &kp N2        &kp N3        &kp N4        &kp N5          &kp N6    &kp N7    &kp N8    &kp N9     &kp N0  &trans
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &trans  &trans
+&kp LCTRL   &trans        &trans        &trans        &trans        &trans          &trans    &trans    &trans    &trans     &trans  &trans
+                                        &kp LGUI      &trans        &kp SPACE       &kp RET   &trans    &kp RALT
             >;
         };
 
