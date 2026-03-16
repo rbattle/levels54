@@ -10,7 +10,7 @@
         bindings = <&mo>, <&kp>;
 
         #binding-cells = <2>;
-        flavor = "hold-preferred";
+        flavor = "tap-preferred";
         tapping-term-ms = <150>;
         hold-trigger-on-release;
         quick-tap-ms = <100>;
@@ -37,9 +37,9 @@
             display-name = "Lower";
             bindings = <
 &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none         &bt BT_CLR_ALL  &none     &none          &none      &none  &kp BACKSPACE
-&kp TAB       &kp LG(Q)     &kp W         &none         &kp LG(R)     &kp LG(N5)    &none           &none     &none          &none      &none  &none
+&kp TAB       &kp LG(Q)     &kp LG(W)     &none         &kp LG(R)     &kp LG(N5)    &bt BT_CLR      &none     &none          &none      &none  &none
 &none         &kp LG(A)     &kp LG(S)     &none         &mkp MB1      &mkp MB2      &kp LEFT        &kp DOWN  &kp UP         &kp RIGHT  &none  &none
-&kp LCTRL     &kp LG(Z)     &kp LG(X)     &kp LG(C)     &kp LG(V)     &none         &kp LG(N)       &none     &kp LG(COMMA)  &none      &none  &bt BT_CLR
+&kp LCTRL     &kp LG(Z)     &kp LG(X)     &kp LG(C)     &kp LG(V)     &none         &kp LG(N)       &none     &kp LG(COMMA)  &none      &none  &kp RIGHT_SHIFT
                                           &kp LGUI      &trans        &kp SPACE     &kp RET         &trans    &kp RALT
             >;
         };
