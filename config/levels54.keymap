@@ -11,7 +11,7 @@
 
         #binding-cells = <2>;
         flavor = "tap-preferred";
-        tapping-term-ms = <150>;
+        tapping-term-ms = <250>;
         hold-trigger-on-release;
         quick-tap-ms = <100>;
     };
