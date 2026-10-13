@@ -13,7 +13,8 @@ manifest:
       import: app/west.yml
     - name: gggw-zmk-keebs
       remote: Good-Great-Grand-Wonderful
-      revision: zephyr-4.1
+      # Pinned: later commits bump rgbled-widget to an API our pinned ZMK lacks
+      revision: 051dbd8d96aa18a997705526bb7e03460e310496
       import: config/west.yml
   self:
     path: config
